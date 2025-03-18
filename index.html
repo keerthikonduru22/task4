@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="portfolio">My Portfolio</div>
+            <div class="hamburger"><img src="../Task4/menu.png" alt="hamburger"/></div>
+            
+            
+            <ul class="nav-links">
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm Keerthi, a passionate web developer with experience in building responsive and user-friendly
+            websites.</p>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <div class="project-card">
+                <h2>Project 1</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="../Task4/Web Development Insights - Personal - Microsoft​ Edge 2025-02-21 22-40-25.mp4" type="video/mp4" >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>Basics of web development</p>
+            </div>
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="../Task4/task2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>Intermediate concepts of HTML,CSS and JAVASCRIPT</p>
+            </div>
+            <div class="project-card">
+                <h2>Project 3</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="../Task4/task3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>concepts of advanced styling and javascript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="todo">
+        <h1>To-Do List</h1>
+        <div class="todo-container">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button id="add-task-btn">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+    </section>
+
+    <section id="products">
+        <h1>Products</h1>
+        <div class="filters">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="rating">Rating</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+        <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="task4.js"></script>
+</body>
+
+</html>
